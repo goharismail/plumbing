@@ -3,40 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Trusted plumbers in Houston, TX. Call ABC Plumbing for fast, reliable plumbing services." />
-  <title>ABC Plumbing | Plumber in Houston</title>
+  <title>[[BUSINESS_NAME]] - Plumber in [[CITY]]</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-
-  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
-      <div class="logo">ABC Plumbing</div>
-      <a href="tel:555-123-4567" class="header-phone">📞 555-123-4567</a>
+      <div class="logo">[[BUSINESS_NAME]]</div>
+      <a href="tel:[[PHONE]]" class="header-phone">[[PHONE]]</a>
     </div>
   </header>
-
-  <!-- HERO -->
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-text">
-        <h1>Trusted Plumbers in Houston</h1>
-        <p class="subheadline">Serving Houston, TX and surrounding areas: Houston, Katy, Sugar Land</p>
         <div class="trust-chips">
-          <span>✅ Licensed & Insured</span>
-          <span>⏰ 24/7 Emergency</span>
-          <span>📍 Local Experts</span>
+          <span class="chip">Licensed and Insured</span>
+          <span class="chip">24/7 Emergency</span>
+          <span class="chip">Local Experts</span>
         </div>
-        <a href="#chatbase-widget-container" class="btn-primary">Get Free Estimate</a>
+        <h1 class="hero-headline">Trusted Plumbers in [[CITY]]</h1>
+        <p class="hero-sub">Serving [[CITY]], [[STATE]] and surrounding areas: [[SERVICE_AREAS]]</p>
+        <div class="hero-ctas">
+          <a href="#chatbase-widget-container" class="btn btn-primary">Get Free Estimate</a>
+          <a href="tel:[[PHONE]]" class="btn btn-outline">[[PHONE]]</a>
+        </div>
       </div>
       <div class="hero-widget">
         <div id="chatbase-widget-container">
           <script src="https://www.chatbase.co/embed.min.js"
-            chatbotId="test-bot-123"
+            chatbotId="[[CHATBASE_BOT_ID]]"
             domain="www.chatbase.co"
             defer>
           </script>
@@ -44,61 +41,61 @@
       </div>
     </div>
   </section>
-
-  <!-- SERVICES -->
-  <section class="services">
+  <section class="services section" id="services">
     <div class="container">
-      <h2>Our Services</h2>
+      <h2 class="section-title">Our Services</h2>
       <div class="services-grid">
         <div class="service-card">
           <div class="icon-placeholder"></div>
-          <h3>Drain Cleaning</h3>
-          <p class="clamp-text">Fast and effective drain cleaning for homes and businesses.</p>
+          <h3 class="service-name">[[SERVICE_1_NAME]]</h3>
+          <p class="service-desc">[[SERVICE_1_DESC]]</p>
         </div>
         <div class="service-card">
           <div class="icon-placeholder"></div>
-          <h3>Pipe Repair</h3>
-          <p class="clamp-text">Expert pipe repair and replacement services.</p>
+          <h3 class="service-name">[[SERVICE_2_NAME]]</h3>
+          <p class="service-desc">[[SERVICE_2_DESC]]</p>
         </div>
         <div class="service-card">
           <div class="icon-placeholder"></div>
-          <h3>Water Heater</h3>
-          <p class="clamp-text">Installation and repair of all water heater types.</p>
+          <h3 class="service-name">[[SERVICE_3_NAME]]</h3>
+          <p class="service-desc">[[SERVICE_3_DESC]]</p>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- ABOUT -->
-  <section class="about">
+  <section class="about section" id="about">
     <div class="container about-inner">
       <div class="about-text">
-        <h2>About Us</h2>
-        <p class="clamp-text">We are Houston's most trusted plumbing company with 15 years of experience.</p>
+        <h2 class="section-title">About Us</h2>
+        <p class="about-body">[[ABOUT_TEXT]]</p>
+        <a href="tel:[[PHONE]]" class="btn btn-primary">Call Us: [[PHONE]]</a>
       </div>
-      <div class="about-image-placeholder"></div>
+      <div class="about-img-placeholder"></div>
     </div>
   </section>
-
-  <!-- REVIEWS -->
-  <section class="reviews">
-    <div class="container">
-      <h2>What Our Customers Say</h2>
+  <section class="reviews section" id="reviews">
+    <div class="container reviews-inner">
+      <h2 class="section-title">What Customers Say</h2>
       <div class="review-card">
-        <p class="review-text clamp-text">"Amazing service! Fixed our burst pipe within an hour."</p>
-        <p class="review-name">— John Smith</p>
+        <div class="stars">*****</div>
+        <blockquote class="review-text">[[REVIEW_1_TEXT]]</blockquote>
+        <p class="reviewer-name">-- [[REVIEW_1_NAME]]</p>
       </div>
     </div>
   </section>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
+  <section class="hours-strip">
     <div class="container">
-      <p>© 2026 ABC Plumbing. Proudly serving Houston, Katy, Sugar Land. Website by Ismail.</p>
-      <p><a href="tel:555-123-4567">555-123-4567</a></p>
+      <span class="hours-label">Hours:</span>
+      <span class="hours-value">[[HOURS]]</span>
+      <a href="tel:[[PHONE]]" class="btn btn-outline btn-sm">Call Now</a>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>2026 [[BUSINESS_NAME]]. Proudly serving [[SERVICE_AREAS]]. Website by TradeJobs247.</p>
+      <a href="tel:[[PHONE]]" class="footer-phone">[[PHONE]]</a>
     </div>
   </footer>
-
   <script src="./script.js"></script>
 </body>
 </html>
